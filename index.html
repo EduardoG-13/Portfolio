@@ -1,94 +1,230 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <meta name="description" content="Portfolio de Eduardo Gabriel de Oliveira — Sistemas de Informação @ Inteli">
+    <title>Eduardo Gabriel — Portfolio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
-    <!-- partial:index.partial.html -->
-    <div class="container">
+    <nav class="nav">
+        <a href="#" class="nav-brand">EG.</a>
+        <div class="nav-links">
+            <a href="#projetos">Projetos</a>
+            <a href="#stack">Stack</a>
+            <a href="https://github.com/EduardoG-13" target="_blank" rel="noopener">GitHub</a>
+            <button id="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+                <span class="icon-dark">🌙</span>
+                <span class="icon-light">☀️</span>
+            </button>
+        </div>
+    </nav>
 
-        <header class="cabecalho">
-            <div class="perfil">
-                <img class="perfil-foto" src="https://github.com/Duduzin13.png" />
-                <div class="titulo">
-                    <h1>Eduardo Gabriel de Oliveira</h1>
-                    <h3>Olá </h3>
+    <main>
+        <section class="hero">
+            <img
+                src="https://github.com/EduardoG-13.png"
+                alt="Eduardo Gabriel"
+                class="avatar"
+                width="120"
+                height="120"
+            >
+            <div class="hero-text">
+                <h1>Eduardo Gabriel <span class="muted">de Oliveira</span></h1>
+                <p class="tagline">Sistemas de Informação @ Inteli · Automação · Dados · Produto Digital</p>
+                <p class="bio">
+                    Projetos aplicados com parceiros reais, prototipagem, robótica e soluções
+                    que conectam tecnologia, negócio e impacto real.
+                </p>
+                <div class="hero-links">
+                    <a href="https://github.com/EduardoG-13" target="_blank" rel="noopener" class="btn btn-primary">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/eduardo-gabriel-de-oliveira-1ab818220/" target="_blank" rel="noopener" class="btn btn-secondary">
+                        LinkedIn
+                    </a>
+                    <a href="mailto:eduardoogabrielloliveiraa@gmail.com" class="btn btn-secondary">
+                        Contato
+                    </a>
                 </div>
             </div>
-            <div class="tema">
-                <button onclick="mudaTema()">Alterar Tema</button>
+        </section>
+
+        <section id="projetos" class="section">
+            <h2 class="section-title">Projetos</h2>
+
+            <div class="projects-grid">
+                <article class="project-card featured">
+                    <div class="project-img">
+                        <img
+                            src="https://opengraph.githubassets.com/1/EduardoG-13/O-Protetor-do-Trilho"
+                            alt="O Protetor do Trilho"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>O Protetor do Trilho</h3>
+                            <span class="badge">Destaque</span>
+                        </div>
+                        <p class="project-partner">↗ Parceria com o Metrô de São Paulo</p>
+                        <p class="project-desc">
+                            Jogo educativo interativo para quiosques e tablets do Metrô-SP. Ensina
+                            segurança, civismo e boas práticas no transporte público para crianças e
+                            adolescentes de 7 a 17 anos. Desenvolvido em equipe multidisciplinar no
+                            Inteli com mais de 400 commits.
+                        </p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>Phaser</span>
+                            <span>HTML5</span>
+                            <span>Node.js</span>
+                        </div>
+                        <a href="https://github.com/EduardoG-13/O-Protetor-do-Trilho" target="_blank" rel="noopener" class="project-link">
+                            Ver repositório →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-img">
+                        <img
+                            src="https://opengraph.githubassets.com/1/EduardoG-13/NEXUS"
+                            alt="NEXUS"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="project-info">
+                        <h3>NEXUS</h3>
+                        <p class="project-desc">
+                            Micro-SaaS para gestão inteligente de biblioteca de jogos. Dashboard com
+                            backlog tracker, calculadora de ROI de entretenimento e chat com IA para
+                            recomendações táticas. <em>"Otimize seu lazer. Queime o backlog."</em>
+                        </p>
+                        <div class="project-tags">
+                            <span>React 18</span>
+                            <span>Vite</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="https://github.com/EduardoG-13/NEXUS" target="_blank" rel="noopener" class="project-link">
+                            Ver repositório →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-img">
+                        <img
+                            src="https://opengraph.githubassets.com/1/EduardoG-13/PS-INTELI-ACADEMY"
+                            alt="PS-INTELI-ACADEMY"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="project-info">
+                        <h3>PS-INTELI-ACADEMY</h3>
+                        <p class="project-desc">
+                            Automação de curadoria de notícias sobre IA. Coleta de 7 feeds especializados
+                            (TechCrunch, HuggingFace, OpenAI, DeepMind...), avaliação com Google Gemini,
+                            filtragem por relevância e entrega de resumos semanais via Telegram — sem
+                            intervenção manual.
+                        </p>
+                        <div class="project-tags">
+                            <span>n8n</span>
+                            <span>Gemini API</span>
+                            <span>Telegram Bot</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/EduardoG-13/PS-INTELI-ACADEMY" target="_blank" rel="noopener" class="project-link">
+                            Ver repositório →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-img">
+                        <img
+                            src="https://opengraph.githubassets.com/1/EduardoG-13/stanza-decoro"
+                            alt="stanza-decoro"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="project-info">
+                        <h3>stanza-decoro</h3>
+                        <p class="project-desc">
+                            Website institucional para empresa de móveis e decoração, com portfólio
+                            de produtos (sofás, poltronas, cortinas e cabeceiras). Desenvolvido para
+                            cliente real.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/EduardoG-13/stanza-decoro" target="_blank" rel="noopener" class="project-link">
+                            Ver repositório →
+                        </a>
+                    </div>
+                </article>
             </div>
-        </header>
-        <main class="projetos">
-            <ul class="projetos-titulo">Projetos</ul>
-            <li class="projetos-item"><a href="https://duduzin13.github.io/Calculadora-de-media/"><u>🔢Calculadora de
-                        Média</u></a>
-                <iframe src="https://duduzin13.github.io/Calculadora-de-media/" frameborder="0"></iframe>
+        </section>
 
+        <section id="stack" class="section">
+            <h2 class="section-title">Stack</h2>
+            <div class="stack-grid">
+                <div class="stack-group">
+                    <h4>Linguagens</h4>
+                    <div class="stack-items">
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>Python</span>
+                        <span>HTML / CSS</span>
+                    </div>
+                </div>
+                <div class="stack-group">
+                    <h4>Front-end</h4>
+                    <div class="stack-items">
+                        <span>React</span>
+                        <span>Vite</span>
+                        <span>Phaser</span>
+                    </div>
+                </div>
+                <div class="stack-group">
+                    <h4>Back-end & Ferramentas</h4>
+                    <div class="stack-items">
+                        <span>Node.js</span>
+                        <span>n8n</span>
+                        <span>Gemini API</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+                <div class="stack-group">
+                    <h4>Outros</h4>
+                    <div class="stack-items">
+                        <span>Robótica</span>
+                        <span>Eletrônica</span>
+                        <span>Hardware / SW</span>
+                        <span>Excel Avançado</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-            </li>
-            <li class="projetos-item"><a href="https://duduzin13.github.io/Conversor-de-Moedas-/"><u>💱Conversor de
-                        moedas</u></a>
-                <iframe src="https://duduzin13.github.io/Conversor-de-Moedas-/" frameborder="0"></iframe>
+    <footer class="footer">
+        <p>Eduardo Gabriel de Oliveira · <a href="https://www.inteli.edu.br/" target="_blank" rel="noopener">Inteli</a> · São Paulo, BR</p>
+        <p>
+            <a href="https://github.com/EduardoG-13" target="_blank" rel="noopener">GitHub</a> ·
+            <a href="https://www.linkedin.com/in/eduardo-gabriel-de-oliveira-1ab818220/" target="_blank" rel="noopener">LinkedIn</a> ·
+            <a href="mailto:eduardoogabrielloliveiraa@gmail.com">E-mail</a>
+        </p>
+    </footer>
 
-            </li>
-            <li class="projetos-item"><a href="https://duduzin13.github.io/Mentalista/"><u>🍀Mentalista</u></a>
-                <iframe src="https://duduzin13.github.io/Mentalista/" frameborder="0"></iframe>
-
-            </li>
-            <li class="projetos-item"><a href="https://duduzin13.github.io/Duduflix/"><u>🎬Duduflix</u></a>
-                <iframe src="https://duduzin13.github.io/Duduflix/" frameborder="0"></iframe>
-
-            </li>
-            <li class="projetos-item"><a href="https://duduzin13.github.io/Tabela-classificat-ria/"><u>🏆Tabela de
-                        classificação</u></a>
-                <iframe src="https://duduzin13.github.io/Tabela-classificat-ria/" frameborder="0"></iframe>
-
-            </li>
-            <li class="projetos-item"><a href="https://duduzin13.github.io/Supertrunfo/"><u>🃏Super Trunfo</u></a>
-                <iframe src="https://duduzin13.github.io/Supertrunfo/" frameborder="0"></iframe>
-
-            </li>
-            <li class="projetos-item"><a href="https://duduzin13.github.io/Project-Cacli/"><u>💞Project Cacli</u></a>
-                <iframe src="https://duduzin13.github.io/Project-Cacli/" frameborder="0"></iframe>
-
-            </li>
-
-            <li class="projetos-item"><a href="https://duduzin13.github.io/Cordel/">🎶Cordel</u></a>
-
-                <iframe src="https://duduzin13.github.io/Cordel/" frameborder="0"></iframe>
-            </li>
-
-            <li class="projetos-item"><a
-                    href="https://duduzin13.github.io/Projeto-Android/"><u>📱Projeto-Android</u></a>
-
-                <iframe src="https://duduzin13.github.io/Projeto-Android/" frameborder="0"></iframe>
-            </li>
-
-            <li class="projetos-item"><a href="https://duduzin13.github.io/paginas/index.html"><u>📄🖥️Páginas</u></a>
-
-                <iframe src="https://duduzin13.github.io/paginas/index.html" frameborder="0"></iframe>
-            </li>
-
-            <li class="projetos-item"><a href="https://duduzin13.github.io/Gabe_Restaurantes/"><u>🍽️Gabe
-                        Restaurates</u></a>
-
-                <iframe src="https://duduzin13.github.io/Gabe_Restaurantes/" frameborder="0"></iframe>
-            </li>
-        </main>
-
-
-        <!-- partial -->
-        <script src="script.js"></script>
-
-      
-
+    <script src="script.js"></script>
 </body>
-
 </html>
